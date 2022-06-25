@@ -1,119 +1,125 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
 
   <title>WebStudio</title>
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <!-- Шапка страницы -->
-    <header>
-      <nav>
-        <!--Логотип сайта-->
-        <a href="" class="logo">
-          <span class="logo_web">Web</span>Studio
-        </a>
-        <!-- Навигация на другие страницы -->
-        <ul>
-          <li><a href="#studio">Студия</a></li>
-          <li><a href="#portfolio">Портфолио</a></li>
-          <li><a href="#contact">Контакты</a></li>
-        </ul>
-      </nav>
-      <!-- Ссылка на адрес электронной почты и телефонный номер  -->
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+<Body>
+  <header class="header">
+
+    <nav>
+<!--Логотип сайта-->
+<a class="link site-logo" href="#">
+  <span class="logo_web">Web</span>Studio
+</a>
+  <!-- Навигация на другие страницы -->
+      <ul class="list nav-list">
+        <li class="nav-item"><a href="#studio" class="link nav-link">Студия</a></li>
+        <li class="nav-item"><a href="#portfolio" class="link nav-link">Портфолио</a></li>
+        <li class="nav-item"><a href="#contact" class="link nav-link">Контакты</a></li>
       </ul>
-    </header>
-
-<!-- Уникальный контент страницы -->
-<main>
-  <!-- Шапка -->
-  <section class="hat">
-    <h1>Эффективные решения для вашего бизнеса</h1>
-      <button type="button" >Заказать услугу</button>
-  </section>
-  <!-- Особенности Our features-->
-  <section>
-    <h2>Наши особенности</h2>
+    </nav>
+    <!-- Ссылка на адрес электронной почты и телефонный номер  -->
     <ul>
-      <li>
-        <h3>Внимание к деталям</h3>
-        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-      </li>
-      <li>
-        <h3>Пунктуальность</h3>
-        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-      </li>
-
-      <li>
-        <h3>Планирование</h3>
-        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-      </li>
-      <li>
-        <h3>Современные технологии</h3>
-        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-      </li>
+      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
-  </section>
+  </header>
 
-  <!-- Чем мы занимаемся -->
-  <section>
-    <h2>Чем мы занимаемся</h2>
-    <ul>
-      <li><img src="./images/close-up-image-programer.jpg" alt="close-up-image-programer" width=370 /></li>
-      <li><img src="./images/web-ui-designers-are-developing.jpg" alt="working-interface-mobile-phones" width=370 /></li>
-      <li><img src="./images/creative-artist-web.jpg" alt="working-colour-selection-graphic-table" width=370 /></li>
-    </ul>
-  </section>
+  <!-- Уникальный контент страницы -->
+  <main>
+    <!-- Шапка -->
+    <section class="hat">
+      <h1>Эффективные решения для вашего бизнеса</h1>
+      <button type="button">Заказать услугу</button>
+    </section>
+    <!-- Особенности Our features-->
+    <section>
+      <h2>Наши особенности</h2>
+      <ul>
+        <li>
+          <h3>Внимание к деталям</h3>
+          <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        </li>
+        <li>
+          <h3>Пунктуальность</h3>
+          <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        </li>
 
-  <!-- Наша команда -->
-  <section>
-    <h2>Наша команда</h2>
-    <ul>
-      <li><img src="./images/timsfoto1.jpg" alt="TimsFoto1" width=270 />
-        <h3>Игорь Демьяненко</h3>
-        <p>Product Designer</p>
-      </li>
-      <li><img src="./images/timsfoto2.jpg" alt="TimsFoto2" width=270 />
-        <h3>Ольга Репина</h3>
-        <p>Frontend Developer</p>
-      </li>
-      <li><img src="./images/timsfoto3.jpg" alt="TimsFoto3" width=270 />
-        <h3>Николай Тарасов</h3>
-        <p>Marketing</p>
-      </li>
-      <li><img src="./images/timsfoto4.jpg" alt="TimsFoto4" width=270 />
-        <h3>Михаил Ермаков</h3>
-        <p>UI Designer</p>
-      <li>
-    </ul>
-  </section>
+        <li>
+          <h3>Планирование</h3>
+          <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        </li>
+        <li>
+          <h3>Современные технологии</h3>
+          <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Чем мы занимаемся -->
+    <section>
+      <h2>Чем мы занимаемся</h2>
+      <ul>
+        <li><img src="./images/close-up-image-programer.jpg" alt="close-up-image-programer" width=370 /></li>
+        <li><img src="./images/web-ui-designers-are-developing.jpg" alt="working-interface-mobile-phones" width=370 />
+        </li>
+        <li><img src="./images/creative-artist-web.jpg" alt="working-colour-selection-graphic-table" width=370 /></li>
+      </ul>
+    </section>
+
+    <!-- Наша команда -->
+    <section>
+      <h2>Наша команда</h2>
+      <ul>
+        <li><img src="./images/timsfoto1.jpg" alt="TimsFoto1" width=270 />
+          <h3>Игорь Демьяненко</h3>
+          <p>Product Designer</p>
+        </li>
+        <li><img src="./images/timsfoto2.jpg" alt="TimsFoto2" width=270 />
+          <h3>Ольга Репина</h3>
+          <p>Frontend Developer</p>
+        </li>
+        <li><img src="./images/timsfoto3.jpg" alt="TimsFoto3" width=270 />
+          <h3>Николай Тарасов</h3>
+          <p>Marketing</p>
+        </li>
+        <li><img src="./images/timsfoto4.jpg" alt="TimsFoto4" width=270 />
+          <h3>Михаил Ермаков</h3>
+          <p>UI Designer</p>
+        <li>
+      </ul>
+    </section>
   </main>
 
-<!-- Подвал страницы -->
-<footer>
-  <!--Логотип сайта-->
+  <!-- Подвал страницы -->
+  <footer>
+    <!--Логотип сайта-->
     <a href="#">
-     Web<span>Studio</span>
+      Web<span>Studio</span>
     </a>
-  <!-- Ссылки на адрес и контакты -->
-  <address>
-    <ul>
-      <li><a href="https://goo.gl/maps/E31LjMS4C6WuwfjZA">г. Киев, пр-т Леси Украинки, 26</a></li>
-      <li><a href="mailto:info@example.com">info@example.com</a></li>
-      <li><a href="+380991111111">+38 099 111 11 11</a></li>
-    </ul>
-  </address>
-</footer>
+    <!-- Ссылки на адрес и контакты -->
+    <address>
+      <ul>
+        <li><a href="https://goo.gl/maps/E31LjMS4C6WuwfjZA">г. Киев, пр-т Леси Украинки, 26</a></li>
+        <li><a href="mailto:info@example.com">info@example.com</a></li>
+        <li><a href="+380991111111">+38 099 111 11 11</a></li>
+      </ul>
+    </address>
+  </footer>
 </body>
 
 </html>
-
-   
